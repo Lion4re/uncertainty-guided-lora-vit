@@ -18,6 +18,7 @@ This page maps the included lightweight artifacts to thesis/report sections.
 
 | File | Purpose |
 | --- | --- |
+| `results/figures/fig_pipeline_overview.png` | README and method overview diagram. |
 | `results/figures/fig_acc_ece.png` | Accuracy/ECE overview. |
 | `results/figures/fig_main_core.png` | Main method comparison. |
 | `results/figures/fig_ens_ece.png` | Ensemble ECE comparison. |

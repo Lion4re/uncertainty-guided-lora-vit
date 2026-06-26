@@ -9,6 +9,7 @@ required_files=(
   "results/tables/ivon_all_results_table.csv"
   "results/tables/ivon_lambda_sweep_table.csv"
   "results/tables/ivon_ess_sweep_table.csv"
+  "results/figures/fig_pipeline_overview.png"
   "results/figures/fig_acc_ece.png"
   "results/figures/fig_main_core.png"
   "results/figures/fig_ens_ece.png"

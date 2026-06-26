@@ -1,5 +1,16 @@
 # Uncertainty-Guided LoRA Adaptation of Vision Transformers
 
+<p align="center">
+  <img src="results/figures/fig_pipeline_overview.png" alt="PACE-KL and inference-time ensemble overview" width="820">
+</p>
+
+<p align="center">
+  <a href="https://scholar.google.com/citations?user=NiUDAvIAAAAJ&hl=en">Vasileios Papageridis</a> ·
+  <a href="https://scholar.google.com/citations?user=p5hq1OAAAAAJ&hl=en">Bhalaji Nagarajan</a> ·
+  <a href="https://scholar.google.com/citations?user=bLc4qKsAAAAJ&hl=en">Montse Pardàs</a> ·
+  <a href="https://scholar.google.com/citations?user=p_MCjd4AAAAJ&hl=en">Petia Radeva 4</a>
+</p>
+
 This repository contains the vision code and curated reproducibility artifacts for the thesis
 **“Uncertainty-Guided LoRA Adaptation of Vision Transformers.”**
 
@@ -15,7 +26,8 @@ consistency objective into probability space with PACE-KL substantially improves
 post-hoc correction, while PAC-Bayes and ensemble variants provide complementary uncertainty
 controls on harder datasets.
 
-## Repository Layout
+<details>
+<summary><strong>Repository Layout</strong></summary>
 
 ```text
 train.py                         main training entrypoint
@@ -36,6 +48,8 @@ tests/                           smoke/unit tests
 The layout intentionally stays close to upstream PACE instead of migrating into a new `src/` tree,
 so existing training and evaluation commands remain valid.
 
+</details>
+
 ## Methods Implemented
 
 | Thesis name | Code/config name | Description |
@@ -53,6 +67,9 @@ so existing training and evaluation commands remain valid.
 | Ensemble | `evaluate_two_model_ensemble.py` | Inference-time probability averaging. |
 
 See [`docs/method_mapping.md`](docs/method_mapping.md) for the full method-to-code map.
+
+<details>
+<summary><strong>Installation and Data</strong></summary>
 
 ## Installation
 
@@ -94,7 +111,10 @@ data/
 
 Large datasets are ignored by Git. See [`data/README.md`](data/README.md).
 
-## Reproducing Thesis Runs
+</details>
+
+<details>
+<summary><strong>Reproducing Thesis Runs</strong></summary>
 
 The runners use shell environment variables. Source a config, then call the existing runner.
 
@@ -127,7 +147,10 @@ bash runners/run_single_model_tssplit_main_june26.sh
 
 More commands are documented in [`docs/reproduce_thesis_results.md`](docs/reproduce_thesis_results.md).
 
-## Evaluation
+</details>
+
+<details>
+<summary><strong>Evaluation and Ensembling</strong></summary>
 
 Evaluate a checkpoint:
 
@@ -166,7 +189,10 @@ python evaluate_two_model_ensemble.py \
   --plot_dir outputs/plots/ensemble
 ```
 
-## Tables and Figures
+</details>
+
+<details>
+<summary><strong>Tables, Figures, and Tests</strong></summary>
 
 Curated lightweight table/figure artifacts live in:
 
@@ -202,6 +228,8 @@ python -m py_compile \
   pace/pace_ops.py \
   pace/residual_adapters.py
 ```
+
+</details>
 
 ## Known Limitations
 
