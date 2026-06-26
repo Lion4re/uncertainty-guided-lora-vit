@@ -1,0 +1,19 @@
+from .pace_ops import compute_loss_pace, compute_loss_pace_offset, compute_loss_pace_lazy_half, compute_loss_pace_fast, MultiplicativeNoiseAdapter, LearnableMultiplicativeNoiseAdapter, pac_bayes_noise_kl, pac_bayes_sigma_summary, set_adapter_mc_dropout
+from .sharable_dropout import ensure_sharable_drop_path
+from .residual_adapters import inject_residual_adapter, ResidualAdapter, get_adapters_and_block_ids, enable_blob, set_blob_mc_sample, blob_kl, blob_sigma_summary
+from .pace_ops import compute_loss_pace_kl
+from .pace_ops import compute_predictive_uncertainty, build_uncertainty_selection_weights
+from .pace_ops import compute_loss_pace_uncertainty
+from .pace_ops import compute_loss_pace_kl_uncertainty
+from .pace_ops import compute_loss_pace_combined
+
+from .pace_ops import compute_loss_pace_kl_margin
+from .pace_ops import compute_loss_pace_kl_flat
+from .pace_ops import compute_loss_pace_kl_jacobian
+from .pace_ops import compute_loss_pace_kl_pacbayes
+from .pace_ops import compute_loss_pace_kl_learnsigma
+from .pace_ops import compute_loss_pace_pacbayes
+from .pace_ops import compute_loss_pace_kl_margin_pacbayes
+from .bayesian_lora import BayesianLoRAConfig, BayesianLoRAState, enable_full_bayesian_lora, set_full_bayes_mc_sample, full_bayes_lora_kl, full_bayes_lora_summary
+from .pac_pgd import PACPGDConfig, PACPGDState, build_pac_pgd_state
+from .ivon_utils import create_optimizer, sampled_params_context, default_ivon_state_path, save_ivon_state, load_ivon_state

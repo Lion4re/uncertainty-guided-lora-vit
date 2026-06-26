@@ -1,0 +1,68 @@
+# Python/cache
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.DS_Store
+
+# Local environments
+.venv/
+venv/
+env/
+*.egg-info/
+
+# Data and pretrained weights
+data/*
+!data/.gitkeep
+!data/README.md
+*.npz
+*.hdf5
+*.h5
+
+# Training outputs and checkpoints
+outputs/
+outs/
+logs/
+*.pt
+*.pth
+*.ckpt
+
+# Curated lightweight thesis artifacts are allowed under results/.
+results/*
+!results/README.md
+!results/tables/
+!results/tables/*.csv
+!results/figures/
+!results/figures/*.png
+!results/figures/*.pdf
+!results/figures/*.svg
+!results/reliability_diagrams/
+!results/reliability_diagrams/*.png
+!results/reliability_diagrams/*.pdf
+!results/reliability_diagrams/*.svg
+
+# Generated archives and transfer bundles
+*.tar
+*.tar.gz
+*.zip
+backups_*/
+gpu_transfer_*/
+thesis_artifacts_*/
+thesis_missing_artifacts_*/
+local_artifacts_*/
+
+# Generated thesis/report artifacts
+thesis_figures_tables_final/
+thesis_appendix_artifacts/
+overleaf_appendix_files_*/
+overleaf_reliability_*/
+plots_*/
+report_material_*/
+tables_june*/
+*.xlsx
+*.inspect.ndjson
+
+# Local diagnostics / notebooks / temporary files
+*.log
+*.tmp
+*.bak
