@@ -1,5 +1,5 @@
 # Uncertainty-Guided LoRA Adaptation of Vision Transformers
-
+---
 <p align="center">
   <img src="results/figures/fig_pipeline_overview.png" alt="PACE-KL and inference-time ensemble overview" width="820">
 </p>
@@ -8,9 +8,10 @@
   <a href="https://scholar.google.com/citations?user=NiUDAvIAAAAJ&hl=en">Vasileios Papageridis</a> ·
   <a href="https://scholar.google.com/citations?user=p5hq1OAAAAAJ&hl=en">Bhalaji Nagarajan</a> ·
   <a href="https://scholar.google.com/citations?user=bLc4qKsAAAAJ&hl=en">Montse Pardàs</a> ·
-  <a href="https://scholar.google.com/citations?user=p_MCjd4AAAAJ&hl=en">Petia Radeva 4</a>
+  <a href="https://scholar.google.com/citations?user=p_MCjd4AAAAJ&hl=en">Petia Radeva</a>
 </p>
 
+---
 This repository contains the vision code and curated reproducibility artifacts for the thesis
 **“Uncertainty-Guided LoRA Adaptation of Vision Transformers.”**
 
@@ -255,3 +256,14 @@ This repository is based on the official PACE vision codebase:
 The adapter and PACE training infrastructure follow the original repository, while the
 uncertainty-guided, PAC-Bayes, IVON-LoRA, Bayesian-LoRA, shift/OOD, ensemble, calibration, plotting,
 and reproducibility extensions were added for this thesis.
+
+---
+<p align="center">
+  <a href="https://telecos.upc.edu/ca">
+    <img src="docs/assets/upc_telecos.png" alt="Universitat Politècnica de Catalunya - Telecos BCN" width="420">
+  </a>
+</p>
+
+This repository accompanies a master thesis submitted at the
+[Escola Tècnica d'Enginyeria de Telecomunicació de Barcelona](https://telecos.upc.edu/ca) (ETSETB), Universitat Politècnica de Catalunya (UPC), for the Master's in Advanced Telecommunication Technologies (MATT)
+(Barcelona, 2026).
